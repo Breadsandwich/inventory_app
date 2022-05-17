@@ -56,7 +56,8 @@ const WarehouseLocation = () => {
     return (
         <>
             <h1>{thisWarehouse.location} Location Warehouse</h1>
-            <p>Notes: Delete button is bugged, so you will have to refresh page to see update.</p>
+            <p>On this page, you can create new items which will be assigned to this warehouse (current warehouse location: {thisWarehouse.location}).</p>
+            <p>Notes: Delete button is bugged, so you will have to refresh page to see the delete update.</p>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="item_name">new item: </label>

@@ -34,6 +34,10 @@ const Warehouse = () => {
     return (
         <div className="body">
             <h1>Warehouse locations</h1>
+                <p>On this page, you can create a warehouse/location, which you can then access.</p>
+                <p>In the warehouse location, you will be able to assign items to that warehouse.</p>
+                <br />
+                <br />
                 <form className="warehouse_form" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="location">new location: </label>
