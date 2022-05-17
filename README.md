@@ -29,6 +29,12 @@ replit: https://replit.com/join/yptdxqejkm-breadsandwich
    * `flask run`
 6. cd into react-app and run `npm install` then `npm start`
 
+## Set-up instructions on Replit environment (updated 5/17/2022)
+1. Click `run` to start the backend server.
+   * If the server does not start up using the run button on replit, in the console tab, do `flask run`.
+3. In the shell window, do `cd react-app`
+4. In the react-app directory, do `npm start`
+
 ## Testing endpoints on Postman
 1. First we need a warehouse location, lets make one.
 ```
