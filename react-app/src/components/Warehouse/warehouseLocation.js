@@ -27,7 +27,7 @@ const WarehouseLocation = () => {
             description,
             price,
             quantity,
-            warehouse_id: warehouseId
+            warehouse_id: warehouse_id
         }
 
         const newItem = await dispatch(createItem(payload))

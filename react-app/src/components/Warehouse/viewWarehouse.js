@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
 import { getAllWarehouses, createWarehouse } from "../../store/warehouse";
 
 const Warehouse = () => {
-    const history = useHistory
     const dispatch = useDispatch();
     const warehousesObj = useSelector(state => state?.warehouseReducer)
     const warehouses = warehousesObj && Object.values(warehousesObj)
@@ -20,7 +18,6 @@ const Warehouse = () => {
         const newLocation = await dispatch(createWarehouse(formData))
         if (newLocation?.id) {
             await dispatch(getAllWarehouses())
-            return history.push(`/`)
         }
         return 'failed to create new location'
     }
