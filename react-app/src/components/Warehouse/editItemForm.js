@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router-dom";
-import { getOneWarehouse, getAllWarehouses } from "../../store/warehouse";
-import { getItem, updateItem, deleteItem } from "../../store/inventory";
+import {getAllWarehouses } from "../../store/warehouse";
+import { updateItem } from "../../store/inventory";
 
 const EditItem = () => {
     const dispatch = useDispatch();
