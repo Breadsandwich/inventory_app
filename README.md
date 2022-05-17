@@ -18,5 +18,11 @@ Technologies used in this project includes Python, Flask, SQLalchemy, PostgreSQL
 2. In the root directory, install dependencies `pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt`
 3. In the root directory, create an `.env` file based off the `.env.example`.
 4. Set up postgreSQL user and database so it matches your `.env` file.
-* `create user <your_username_here> with password '<your_password_here>' createdb`
-* `create database <your_database_name_here> with owner <your_username_here>`
+    * `create user <your_username_here> with password '<your_password_here>' createdb`
+    * `create database <your_database_name_here> with owner <your_username_here>`
+5. Get into pipenv, migrate the database, seed the database, and run the flask app using the following commands:
+   * `pipenv shell`
+   * `flask db upgrade`
+   * `flask seed all`
+   * `flask run`
+6. cd into react-app and run `npm install` then `npm start`
