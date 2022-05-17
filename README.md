@@ -165,8 +165,21 @@ PUT /api/inventory/<int:itemId>
 6. If we don't want an item anymore, we can delete an item with the delete route. [Delete Item]
 
 ```
+// Deleting an item will return a string that confirms deletion of selected itemId.
 // Output
 DELETE /api/inventory/<int:itemId>
 
-'Deleted item Id: 1'
+return 'Deleted item Id: 1'
 ```
+
+## Web application demo photos
+### Create and view warehouses
+![warehouses](./images/warehouses.PNG)
+
+### view Warehouse with assigned inventory
+On this page, users will be able to view the inventory assigned to a warehouse location. Users may also create new items that will be assigned to the current warehouse.
+![warehouseInventory](./images/warehouse_inventory_list.PNG)
+
+### Edit item page
+On this page, users are able to edit the selected item from above
+![edit_item](./images/edit_item.PNG)
