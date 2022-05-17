@@ -3,7 +3,7 @@
 This project was developed for Shopify's Fall 2022 Internship backend coding challenge.
 Technologies used in this project includes Python, Flask, SQLalchemy, PostgreSQL, and React/Redux to showcase the web application.
 
-(This is a replit multiplayer link, so you will need to be logged in. Further instructions below.)
+(This is a replit multiplayer link, so you will need to be logged in. Further instructions below.) <br>
 replit: https://replit.com/join/yptdxqejkm-breadsandwich
 
 ## Project Features
