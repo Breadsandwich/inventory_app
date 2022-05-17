@@ -116,9 +116,9 @@ GET /api/inventory/all
             "warehouse_id": 1
         },
         {
-            "description": "secret test item.",
-            "id": 1,
-            "item_name": "test item",
+            "description": "secret test item 2.",
+            "id": 2,
+            "item_name": "test item 2",
             "price": "7.00",
             "quantity": "5",
             "warehouse_id": 2
