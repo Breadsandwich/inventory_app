@@ -3,7 +3,7 @@
 This project was developed for Shopify's Fall 2022 Internship backend coding challenge.
 Technologies used in this project includes Python, Flask, SQLalchemy, PostgreSQL, and React/Redux to showcase the web application.
 
-replit: https://replit.com/@Breadsandwich/inventoryapp#.replit
+replit: https://replit.com/join/yptdxqejkm-breadsandwich
 
 ## Project Features
 ### Basic features
