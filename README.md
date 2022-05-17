@@ -4,13 +4,13 @@ This project was developed for Shopify's Fall 2022 Internship backend coding cha
 Technologies used in this project includes Python, Flask, SQLalchemy, PostgreSQL, and React/Redux to showcase the web application.
 
 ## Project Features
-### basic features
+### Basic features
 * User is able to create new inventory items.
 * User is able to Edit inventory items.
 * User is able to Delete inventory items.
 * User is able to view list of inventory items.
 
-### additional feature
+### Additional feature
 * Ability to create warehouses/locations and assign inventory to specific locations
 
 ## Set-up instructions on local environment
@@ -27,7 +27,7 @@ Technologies used in this project includes Python, Flask, SQLalchemy, PostgreSQL
    * `flask run`
 6. cd into react-app and run `npm install` then `npm start`
 
-## Testing endpoints
+## Testing endpoints on Postman
 1. First we need a warehouse location, lets make one.
 ```
 // Input
