@@ -1,6 +1,5 @@
-from flask import Blueprint, request, render_template, redirect
-import psycopg2
-from datetime import datetime
+from flask import Blueprint, request
+
 from app.forms.warehouse_form import WarehouseForm
 from app.models import Warehouse, db
 
