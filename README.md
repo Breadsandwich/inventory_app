@@ -56,6 +56,7 @@ GET /api/warehouses/all
         }
 }
 
+// Output
 GET /api/warehouses/1
 {
     "id": 1,
@@ -72,4 +73,100 @@ GET /api/warehouses/1
 
     ]
 }
+```
+3. From this point, we can start building our inventory of items. [Create Items]
+```
+// Input
+POST /api/inventory/new
+{
+    "item_name": "test item",
+    "description": "secret test item.",
+    "price": "7.00",
+    "quantity": 5,
+    "warehouse_id": 1
+}
+// "warehouse_id" is what gives the item association with a warehouse!
+// This is designed as 'one warehouse has many items', one-to-many relationship
+
+// Output
+{
+    "description": "secret test item.",
+    "id": 1,
+    "item_name": "test item",
+    "price": "7.00",
+    "quantity": "5",
+    "warehouse_id": 1
+}
+```
+4. We can take a look at the our inventory. [Read Items]
+```
+// View all items.
+// Output
+GET /api/inventory/all
+{
+    "all_items": [
+        {
+            "description": "secret test item.",
+            "id": 1,
+            "item_name": "test item",
+            "price": "7.00",
+            "quantity": "5",
+            "warehouse_id": 1
+        },
+        {
+            "description": "secret test item.",
+            "id": 1,
+            "item_name": "test item",
+            "price": "7.00",
+            "quantity": "5",
+            "warehouse_id": 2
+        }
+    ]
+}
+
+// View individual item.
+// Output
+GET /api/inventory/1
+{
+    "description": "secret test item.",
+    "id": 1,
+    "item_name": "test item",
+    "price": "7.00",
+    "quantity": "5",
+    "warehouse_id": 1
+}
+```
+
+5. If we want to change something, we can use the update route. [Update Item]
+```
+// Input
+PUT /api/inventory/<int:itemId>
+{
+    "item_name": "test item updated",
+    "description": "secret test item. updated",
+    "price": 10,
+    "quantity": 2,
+    "warehouse_id": 1
+
+}
+
+// Output
+{
+    "description": "secret test item. updated",
+    "id": 1,
+    "item_name": "test item updated",
+    "price": "10.00",
+    "quantity": "2",
+    "warehouse_id": 1
+}
+
+```
+
+6. If we don't want an item anymore, we can delete an item with the delete route. [Delete Item]
+
+```
+// Output
+DELETE /api/inventory/<int:itemId>
+
+'Deleted item Id: 1'
 ```
